@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top 5 Customers</title>
+</head>
+<style>
+    body {
+        background-color: skyblue;
+    }
+
+    ul {
+        background-color: yellow;
+    }
+</style>
+<body>
+    <h1>Top 5 Customers in Last Six Months</h1>
+    <ul>
+        {% for customer in top_customers %}
+            <li>{{ customer.customer__username }} - Total Amount: {{ customer.total_spent }}₹</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

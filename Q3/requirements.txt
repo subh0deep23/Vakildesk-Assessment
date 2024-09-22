@@ -1,0 +1,11 @@
+Django>=3.2,<4.0
+psycopg2-binary  # If using PostgreSQL
+# Add other dependencies as needed
+Migrations
+
+After defining your Order model, run the following commands to create and apply migrations:
+
+bash
+
+python manage.py makemigrations my_app
+python manage.py migrate
